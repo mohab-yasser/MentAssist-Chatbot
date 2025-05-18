@@ -1,0 +1,5 @@
+1️⃣ pip install -r requirements.txt
+2️⃣ python app.py
+3️⃣ POST to: http://localhost:5000/chat
+   Body JSON: {"message": "your message"}
+4️⃣ Response: {"reply": "bot reply here"}

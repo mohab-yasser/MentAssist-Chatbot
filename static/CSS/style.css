@@ -1,0 +1,140 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    color: #d0eaff; /* لبني فاتح */
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+}
+
+.back-ground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.back-ground video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(0.6) saturate(1.1); /* خلى الفيديو مشبع شوية */
+}
+
+header {
+    background-color: rgba(5, 10, 30, 0.85); /* أزرق غامق */
+    color: #aee1ff; /* سماوي */
+    padding: 18px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    z-index: 1;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(6px);
+}
+
+.chat-scrollable {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+    background: rgba(5, 10, 30, 0.5); /* أزرق غامق بخفة */
+    scroll-behavior: smooth;
+}
+
+.message {
+    display: flex;
+    margin-bottom: 15px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.message-content {
+    background: rgba(40, 80, 120, 0.85); /* أزرق أغمق وواضح */
+    padding: 14px 20px;
+    border-radius: 20px;
+    max-width: 70%;
+    font-size: 16px;
+    backdrop-filter: blur(10px);
+    color: #e6f7ff; /* لبني فاتح جدًا */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* ظل واضح */
+    border: 1px solid rgba(100, 180, 220, 0.3); /* خط بسيط حوالين الرسالة */
+}
+
+.user .message-content {
+    background: rgba(60, 140, 200, 0.9); /* لبني غامق وأوضح */
+    align-self: flex-end;
+    border: 1px solid rgba(150, 220, 255, 0.4);
+    color: #ffffff; /* أبيض صريح للمستخدم */
+}
+
+
+.user {
+    justify-content: flex-end;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.input-container {
+    display: flex;
+    padding: 12px;
+    background: rgba(5, 10, 30, 0.85); /* نفس لون الهيدر تقريبا */
+    align-items: center;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.4);
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 14px 18px;
+    border-radius: 30px;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    color: #d0eaff;
+    margin-right: 10px;
+    font-size: 16px;
+    outline: none;
+    backdrop-filter: blur(5px);
+}
+
+input::placeholder {
+    color: #aee1ff;
+}
+
+button {
+    padding: 12px 20px;
+    border-radius: 30px;
+    background-color: #33ccff; /* لون السماوي */
+    color: #003366;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    box-shadow: 0 0 10px rgba(51, 204, 255, 0.5);
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #1fb8e0;
+    color: #001f33;
+    box-shadow: 0 0 15px rgba(51, 204, 255, 0.7);
+}
