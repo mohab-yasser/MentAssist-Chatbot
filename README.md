@@ -78,7 +78,7 @@ pip install -r requirements.txt
 python app.py
 ```
 
-This will launch the Flask server at `http://localhost:5000`
+Then open your browser and go to `http://localhost:5000`.
 
 ---
 
@@ -97,9 +97,9 @@ Or test it via Postman:
 
 ---
 
-## 📸 Screenshot (optional)
+## 📸 Screenshot
 
-_Add a screenshot here showing the chatbot interface in action._
+![Chatbot Screenshot](screenshot.png)
 
 ---
 
@@ -107,5 +107,3 @@ _Add a screenshot here showing the chatbot interface in action._
 
 - The model and tokenizer were pre-trained and saved in the repo.
 - This project is meant for educational and prototyping purposes only.
-
----
