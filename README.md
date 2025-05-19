@@ -99,7 +99,7 @@ Or test it via Postman:
 
 ## 📸 Screenshot
 
-![Chatbot Screenshot](screenshot.png)
+![Chatbot Screenshot](screenshot.jpg)
 
 ---
 
